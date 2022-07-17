@@ -15,7 +15,7 @@ public class MemoryMemberRepositoryTest {
 
     // Test 끝날때마다 repository 모두 clear
     @AfterEach
-    public void afterEach(){
+    public void afterEach() {
         repository.clearStore();
     }
 
@@ -48,7 +48,7 @@ public class MemoryMemberRepositoryTest {
     }
 
     @Test
-    public void findAll(){
+    public void findAll() {
         Member member1 = new Member();
         member1.setName("spring1");
         repository.save(member1);
